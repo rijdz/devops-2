@@ -13,7 +13,7 @@
       when:
         - ansible_distribution == "Ubuntu"
     - name: run container
-      docker-container:
+      docker_container:
         name: apache2
         state: present
         image: rijdz/httpd:5
